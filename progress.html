@@ -12,26 +12,39 @@
     <title>Argentum Designs</title>
 </head>
 
-<body>
+<body style='position:relative'>
     <div class='blue-field'><a href='index.html'><i class="fade-in fa fa-home" id='prog-home'></i></a>
     </div>
     <div class='stripe' id='black-stripe3'></div>
     <div class='stripe' id='blue-stripe3'></div>
     <h6 class='fade-in' id='explanation'>Sorry, but I don't exactly have a Dribbble profile in operation yet. Until I do, here's some new logo art I've been working on:</h6>
-    <table class='fade-in' id='logo-display'>
+    <table id='logo-display'>
         <tr>
-            <td>
+            <td align='center'>
                 <a href='imgs/circles-logo.png'>
                     <div class='logo-table' id='lt1'></div>
                 </a>
             </td>
-            <td align='right'>
+            <td align='center'>
                 <a href='/imgs/flowing-logo.png'>
-                    <div class='logo-table' id='lt2'></div>
+                    <div class='logo-table' id='lt2'>
+                    </div>
                 </a>
             </td>
         </tr>
     </table>
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var x = 1;
+            setTimeout(function () {
+                setInterval(function () {
+                    $('#lt' + x).fadeTo(1, 700);
+                    x++;
+                }, 400);
+            }, 2000);
+        });
+    </script>
 </body>
 
 </html>
