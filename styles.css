@@ -1,8 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
 @font-face {
     font-family: Dense;
-    src: url(Dense-Regular.otf);
+    src: url(fonts/Dense-Regular.otf);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(fonts/AvenirNextLTPro-Regular.otf);
 }
 
 @keyframes bottom-out {
@@ -146,7 +150,7 @@ body {
 a {
     text-decoration: none;
     color: black;
-    transition-duration: .5s;
+    transition-duration: .7s;
 }
 
 a:hover {
@@ -162,6 +166,18 @@ a:active {
     height: 150px;
 }
 
+.blue-field i {
+    color: white;
+    font-size: 50px;
+    margin-left: 10%;
+    margin-top: 50px;
+    transition-duration: .7s;
+}
+
+.blue-field i:hover {
+    color: #4183d7;
+}
+
 .left {
     width: calc(80% - 85px);
 }
@@ -171,12 +187,14 @@ a:active {
 }
 
 #black-stripe1,
-#black-stripe2 {
+#black-stripe2,
+#black-stripe3 {
     background-color: #222;
 }
 
 #blue-stripe1,
-#blue-stripe2 {
+#blue-stripe2,
+#blue-stripe3 {
     background-color: #4183d7;
 }
 
@@ -278,10 +296,10 @@ a:active {
     -moz-animation-delay: 2.6s;
     -webkit-animation-delay: 2.6s;
     animation-delay: 2.6s;
-    font-family: Montserrat;
+    font-family: Avenir;
     margin-top: 75px;
     font-size: 50px;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
 }
 
 .fade-in.subtitle {
@@ -290,7 +308,7 @@ a:active {
     animation-delay: 2.7s;
     font-family: Source Sans Pro;
     font-size: 15px;
-    margin-top: -15px;
+    margin-top: -25px;
 }
 
 .fade-in.bio {
@@ -368,6 +386,51 @@ a:active {
     font-family: Source Sans Pro;
     font-size: 20px;
     margin-top: 50px;
+}
+/* progress.html starts here */
+
+#explanation {
+    -moz-animation-delay: .7s;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+    font-family: Source Sans Pro;
+    font-size: 25px;
+    margin-right: 10%;
+}
+
+#logo-display {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.logo-table {
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    border: 1px solid #999;
+    transition-duration: .7s;
+}
+
+.logo-table:hover {
+    opacity: .6;
+}
+
+#lt1 {
+    background-image: url("imgs/circles-logo.png");
+}
+
+#lt2 {
+    background-image: url("imgs/flowing-logo.png");
+}
+
+#prog-home {
+    -moz-animation-delay: 1.3s;
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
 }
 
 .logo.bottom,
