@@ -390,21 +390,19 @@ a:active {
 /* progress.html starts here */
 
 #explanation {
-    -moz-animation-delay: .7s;
-    -webkit-animation-delay: .7s;
-    animation-delay: .7s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
     font-family: Source Sans Pro;
     font-size: 25px;
     margin-right: 10%;
+    text-align: center;
 }
 
 #logo-display {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    -moz-animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
 }
 
 .logo-table {
@@ -413,6 +411,7 @@ a:active {
     background-size: cover;
     border: 1px solid #999;
     transition-duration: .7s;
+    opacity: 0;
 }
 
 .logo-table:hover {
@@ -428,9 +427,9 @@ a:active {
 }
 
 #prog-home {
-    -moz-animation-delay: 1.3s;
-    -webkit-animation-delay: 1.3s;
-    animation-delay: 1.3s;
+    -moz-animation-delay: .7s;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
 }
 
 .logo.bottom,
