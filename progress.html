@@ -13,38 +13,21 @@
 </head>
 
 <body style='position:relative'>
-    <div class='blue-field'><a href='index.html'><i class="fade-in fa fa-home" id='prog-home'></i></a>
+    <div class='blue-field'>
+        <a href='index.html'></a>
     </div>
-    <div class='stripe' id='black-stripe3'></div>
-    <div class='stripe' id='blue-stripe3'></div>
+    <div class='black stripe'></div>
+    <div class='blue stripe'></div>
     <h6 class='fade-in' id='explanation'>Sorry, but I don't exactly have a Dribbble profile in operation yet. Until I do, here's some new logo art I've been working on:</h6>
-    <table id='logo-display'>
-        <tr>
-            <td align='center'>
-                <a href='imgs/circles-logo.png'>
-                    <div class='logo-table' id='lt1'></div>
-                </a>
-            </td>
-            <td align='center'>
-                <a href='/imgs/flowing-logo.png'>
-                    <div class='logo-table' id='lt2'>
-                    </div>
-                </a>
-            </td>
-        </tr>
-    </table>
-    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var x = 1;
-            setTimeout(function () {
-                setInterval(function () {
-                    $('#lt' + x).fadeTo(1, 700);
-                    x++;
-                }, 400);
-            }, 2000);
-        });
-    </script>
+    <a class='l-a-a' href='imgs/circles-logo.png'>
+        <img class='fade-in logo-art' id='l-a1' src="imgs/circles-logo.png">
+    </a>
+
+    <a class='l-a-a' href='/imgs/flowing-logo.png'>
+        </p>
+        <img class='fade-in logo-art' id='l-a2' src="imgs/flowing-logo.png">
+    </a>
+    <p class='fade-in' id='credit'>Note: Number Two is thanks to Ryan Lerch and his Inkscape Tutorials Blog. You can visit him <a href='http://inkscapetutorials.org/2014/05/12/create-a-soft-feathered-background-with-inkscape/'>here.</a>
 </body>
 
 </html>
