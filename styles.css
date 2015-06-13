@@ -111,33 +111,27 @@
 @keyframes entrance {
     from {
         opacity: 0;
-        transform: translateY(60px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
 @-moz-keyframes entrance {
     from {
         opacity: 0;
-        -moz-transform: translateY(60px);
     }
     to {
         opacity: 1;
-        -moz-transform: translateY(0);
     }
 }
 
 @-webkit-keyframes entrance {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(60px);
     }
     100% {
         opacity: 1;
-        -webkit-transform: translateY(0);
     }
 }
 
@@ -206,6 +200,10 @@ a:active {
 .blue-field {
     background-color: #19b5fe;
     height: 200px;
+    -moz-animation: entrance .7s ease-in-out 2.6s 1 forwards;
+    -webkit-animation: entrance .7s ease-in-out 2.6s 1 forwards;
+    animation: entrance .7s ease-in-out 2.6s 1 forwards;
+    opacity: 0;
 }
 
 .blue-field i {
@@ -311,8 +309,7 @@ a:active {
     width: 150px;
 }
 
-.fade-in,
-.section {
+.fade-in {
     -moz-animation: entrance ease-in-out 1;
     -webkit-animation: entrance ease-in-out 1;
     animation: entrance ease-in-out 1;
@@ -329,101 +326,60 @@ a:active {
     -webkit-animation-delay: 2.6s;
     animation-delay: 2.6s;
     font-family: Avenir;
-    margin-top: 175px;
+    margin-top: 150px;
     font-size: 50px;
     letter-spacing: 7px;
     text-align: center;
     text-shadow: 0px 4px 0px #4183d7;
 }
 
-.section {
-    opacity: 0;
-}
-
-#about {
-    margin-top: 150px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: rgba(10, 170, 255, .8);
-    -moz-animation-delay: 2.7s;
-    -webkit-animation-delay: 2.7s;
-    animation-delay: 2.7s;
+#subtitle {
+    margin-top: -15px;
+    font-family: Source Sans Pro;
+    text-align: center;
+    font-size: 20px;
+    -moz-animation-delay: 2.8s;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
 }
 
 .sec-title {
-    text-align: center;
     font-family: Source Sans Pro;
     font-size: 35px;
 }
 
-#abt-title {
-    margin-bottom: 30px;
-}
-
 #bio {
-    -moz-animation-delay: 2.8s;
-    -webkit-animation-delay: 2.8s;
-    animation-delay: 2.8s;
-    width: 60%;
-    margin-left: 20%;
+    margin: 0;
+    margin-top: 30px;
     font-family: Source Sans Pro;
     font-size: 20px;
 }
 
-#work-title {
-    margin-top: 125px;
-    -moz-animation-delay: 2.9s;
-    -webkit-animation-delay: 2.9s;
-    animation-delay: 2.9s;
-}
-
 #accordion {
-    margin-top: 40px;
-    margin-bottom: 175px;
+    margin-top: 100px;
 }
 
 .acc {
     font-family: Source Sans Pro;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 75px;
+    padding-bottom: 75px;
     border-bottom: 1px solid #fff;
 }
 
 .acc h1 {
     transition-duration: .5s;
+    margin: 0;
 }
 
 .acc h1:hover {
-    color: #4183d7;
     cursor: pointer;
 }
 
 .acc h1:active {
-    color: #19b5fe;
-}
-
-#acc-top {
-    border-top: 10px solid #222;
-    -moz-animation-delay: 3s;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-}
-
-#acc-middle {
-    -moz-animation-delay: 3.1s;
-    -webkit-animation-delay: 3.1s;
-    animation-delay: 3.1s;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
-}
-
-#acc-bottom {
-    border-bottom: 10px solid #4183d7;
-    -moz-animation-delay: 3.2s;
-    -webkit-animation-delay: 3.2s;
-    animation-delay: 3.2s;
+    color: #4183d7;
 }
 
 .acc h1 i {
@@ -432,48 +388,49 @@ a:active {
 }
 
 .acc-content {
+    margin: 0;
     display: none;
-    margin-bottom: 30px;
+}
+
+#abt {
+    -moz-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    background-color: rgba(90, 140, 255, .8);
+    margin-bottom: -1px;
+}
+
+#work {
+    -moz-animation-delay: 3.1s;
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+    background-color: rgba(10, 140, 255, .8);
+    margin-bottom: -1px;
 }
 
 #contact {
-    -moz-animation-delay: 3.3s;
-    -webkit-animation-delay: 3.3s;
-    animation-delay: 3.3s;
+    -moz-animation-delay: 3.2s;
+    -webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s;
     background-color: rgba(10, 170, 255, .8);
-    padding-top: 125px;
-    padding-bottom: 125px;
-}
-
-#contact-title {
-    -moz-animation-delay: 3.4s;
-    -webkit-animation-delay: 3.4s;
-    animation-delay: 3.4s;
 }
 
 #contact-p {
-    text-align: center;
-    -moz-animation-delay: 3.5s;
-    -webkit-animation-delay: 3.5s;
-    animation-delay: 3.5s;
     font-family: Source Sans Pro;
     font-size: 20px;
     margin-top: 30px;
 }
-
-#contact a,
-#credit a:hover {
-    color: #4183d7;
-}
 /* progress.html starts here */
 
 #explanation {
-    -moz-animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -moz-animation-delay: 2.3s;
+    -webkit-animation-delay: 2.3s;
+    animation-delay: 2.3s;
     font-family: Source Sans Pro;
     font-size: 25px;
     margin-right: 10%;
+    margin-top: 75px;
+    margin-bottom: 75px;
     text-align: center;
 }
 
@@ -487,28 +444,27 @@ a:active {
     max-width: 80%;
     margin-bottom: 50px;
     height: auto;
-    width: auto\9;
     background-size: cover;
     border: 1px solid #999;
     transition-duration: .7s;
 }
 
 #l-a1 {
-    -moz-animation-delay: 1.4s;
-    -webkit-animation-delay: 1.4s;
-    animation-delay: 1.4s;
+    -moz-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 #l-a2 {
-    -moz-animation-delay: 1.6s;
-    -webkit-animation-delay: 1.6s;
-    animation-delay: 1.6s;
+    -moz-animation-delay: 3.2s;
+    -webkit-animation-delay: 3.2s;
+    animation-delay: 3.2s;
 }
 
 #credit {
-    -moz-animation-delay: 1.9s;
-    -webkit-animation-delay: 1.9s;
-    animation-delay: 1.9s;
+    -moz-animation-delay: 3.4s;
+    -webkit-animation-delay: 3.4s;
+    animation-delay: 3.4s;
     font-family: Source Sans Pro;
     text-align: center;
     margin-bottom: 75px;
@@ -518,15 +474,14 @@ a:active {
     color: #4183d7;
 }
 
-.l-a-a:hover {
-    opacity: .6;
+#credit a:hover {
+    color: #4183d7;
 }
 
 .logo.bottom,
 .logo.top,
 .logo-fade,
-.fade-in,
-.section {
+.fade-in {
     -moz-animation-duration: .7s;
     -webkit-animation-duration: .7s;
     animation-duration: .7s;
