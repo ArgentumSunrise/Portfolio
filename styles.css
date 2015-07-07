@@ -20,7 +20,7 @@
 
 @keyframes slideRight {
     0% {
-        transform: translateX(-215px);
+        transform: translateX(-220px);
     }
     100% {
         transform: translateX(0);
@@ -139,7 +139,7 @@ a:active {
 
 #right h1 {
     animation: slideRight .7s linear 1s 1 forwards;
-    transform: translateX(-215px);
+    transform: translateX(-220px);
     float: left;
     font-family: John;
     color: #4d74b9;
