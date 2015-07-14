@@ -59,6 +59,9 @@ a {
     transition: color .3s ease-in-out;
     cursor: pointer;
 }
+/*.fadeIn {
+    opacity: 0;
+}*/
 
 a:hover {
     color: #2b7dde;
@@ -104,9 +107,9 @@ a:active {
 
 #page1 img {
     position: absolute;
-    width: 30vw;
-    left: calc(50% - 15vw);
-    margin-top: 30vh;
+    width: 35vh;
+    left: calc(50% - 17.5vh);
+    margin-top: 35vh;
 }
 
 #left {
@@ -151,16 +154,16 @@ a:active {
 }
 
 #t1-left {
-    margin-left: calc(50% - 75px);
-    border-left: 75px solid transparent;
-    border-top: 60px solid #4d74b9;
+    margin-left: calc(50% - 7.5vw);
+    border-left: 7.5vw solid transparent;
+    border-top: 6vw solid #4d74b9;
 }
 
 #t1-right {
-    margin-top: -60px;
+    margin-top: -6vw;
     margin-left: 50vw;
-    border-right: 75px solid transparent;
-    border-top: 60px solid #ecf0f1;
+    border-right: 7.5vw solid transparent;
+    border-top: 6vw solid #ecf0f1;
 }
 
 h2 {
@@ -226,17 +229,17 @@ hr {
 
 #t2,
 #t3 {
-    border-right: 75px solid transparent;
-    border-left: 75px solid transparent;
-    margin-left: calc(50% - 75px);
+    border-right: 7.5vw solid transparent;
+    border-left: 7.5vw solid transparent;
+    margin-left: calc(50% - 7.5vw);
 }
 
 #t2 {
-    border-top: 60px solid #2b7dde;
+    border-top: 6vw solid #2b7dde;
 }
 
 #t3 {
-    border-top: 60px solid #ecf0f1;
+    border-top: 6vw solid #ecf0f1;
 }
 
 #page3 p {
@@ -274,12 +277,35 @@ hr {
     color: #ecf0f1;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
     h2 {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     p {
         font-size: 1.2vw;
         line-height: 2vw;
     }
+<<<<<<< Updated upstream
 }
+=======
+    #page1 img {
+        width: 40vh;
+        left: calc(50% - 20vh);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #page1 {
+        height: 75vh;
+    }
+    #page1 h1 {
+        animation: none;
+        width: auto;
+        font-size: 3.2vh;
+    }
+    #right h1 {
+        margin-left: 0;
+        transform: translateX(0);
+    }
+}
+>>>>>>> Stashed changes
