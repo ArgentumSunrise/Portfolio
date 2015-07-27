@@ -43,7 +43,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     text-align: center;
 }
 
@@ -59,9 +59,6 @@ a {
     transition: color .3s ease-in-out;
     cursor: pointer;
 }
-/*.fadeIn {
-    opacity: 0;
-}*/
 
 a:hover {
     color: #2b7dde;
@@ -243,7 +240,7 @@ hr {
 }
 
 #page3 p {
-    margin: 4vh 17vh 0 17vh;
+    margin: 4vh 17vw 0 17vw;
 }
 
 #page3 img {
@@ -285,9 +282,6 @@ hr {
         font-size: 1.2vw;
         line-height: 2vw;
     }
-<<<<<<< Updated upstream
-}
-=======
     #page1 img {
         width: 40vh;
         left: calc(50% - 20vh);
@@ -298,6 +292,12 @@ hr {
     #page1 {
         height: 75vh;
     }
+    .h1-wrap {
+        margin-top: 15vh;
+    }
+    #page1 img {
+        margin-top: 25vh;
+    }
     #page1 h1 {
         animation: none;
         width: auto;
@@ -307,5 +307,13 @@ hr {
         margin-left: 0;
         transform: translateX(0);
     }
+    .non-cap {
+        height: 10vh;
+    }
+    .cap {
+        height: 9.7vh;
+    }
+    #page3 img {
+        height: 15vh;
+    }
 }
->>>>>>> Stashed changes
