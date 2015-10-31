@@ -18,6 +18,8 @@
     src: url(fonts/AvenirNextLTPro-Regular.otf);
 }
 
+@keyframes {}
+
 html,
 body {
     width: 100vw;
@@ -27,6 +29,11 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     text-align: center;
+}
+
+body {
+    perspective: 1px;
+    perspective-origin-x: 100%;
 }
 
 p {
@@ -54,8 +61,7 @@ a:active {
     height: 100%;
     width: 100%;
     top: 0;
-    overflow-y: auto;
-    position: relative;
+    overflow-y: hidden;
 }
 
 #p1 {
@@ -69,18 +75,20 @@ a:active {
 }
 
 .back {
+    background-size: cover;
+    background-attachment: fixed;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+#pb1 {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;
-}
-
-#pb1 {
     background-image: url(imgs/japan-mtns.jpg);
+    transform: translateZ(-2px) scale(3);
 }
 
 .cover {
@@ -93,6 +101,7 @@ a:active {
     margin-top: 300px;
     overflow-y: hidden;
     position: relative;
+    transform-style: preserve-3d;
 }
 
 .nav-item,
@@ -137,6 +146,7 @@ a:active {
 
 .nav-unselected-ctr {
     height: 134px;
+    position: relative;
     padding-top: 67px;
     box-sizing: border-box;
 }
@@ -165,4 +175,12 @@ a:active {
 
 .nav-item:first-child #selected {
     border-left: 2px solid #3498db;
+}
+
+#about-page {
+    position: absolute;
+    top: 100vh;
+    background-color: #ecf0f1;
+    transformZ(0);
+    transform-style: preserve-3d;
 }
