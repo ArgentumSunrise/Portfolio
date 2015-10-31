@@ -8,6 +8,13 @@ $(document).ready(function () {
         }
     });
 
+    $(window).scroll(function () {
+        var offset = window.pageYOffset;
+        console.log(offset)
+        $('#pb1').css('margin-top', (offset / 2) + 'px')
+        console.log($('#pb1').css('margin-top'))
+    });
+
     $('.arrow').click(function (event) {
         event.preventDefault();
         scrolling($('#about-page'))
