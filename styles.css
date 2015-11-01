@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @font-face {
     font-family: Joe;
     src: url(fonts/Slim-Joe.otf);
@@ -9,16 +10,35 @@
 }
 
 @font-face {
-    font-family: Dense;
-    src: url(fonts/Dense-Regular.otf);
-}
-
-@font-face {
     font-family: Avenir;
     src: url(fonts/AvenirNextLTPro-Regular.otf);
 }
 
 @keyframes blink {
+    0% {
+        color: rgba(236, 240, 241, 1.0)
+    }
+    50% {
+        color: rgba(236, 240, 241, 0.7)
+    }
+    100% {
+        color: rgba(236, 240, 241, 1.0)
+    }
+}
+
+-moz-@keyframes blink {
+    0% {
+        color: rgba(236, 240, 241, 1.0)
+    }
+    50% {
+        color: rgba(236, 240, 241, 0.7)
+    }
+    100% {
+        color: rgba(236, 240, 241, 1.0)
+    }
+}
+
+-webkit-@keyframes blink {
     0% {
         color: rgba(236, 240, 241, 1.0)
     }
@@ -39,12 +59,12 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     text-align: center;
+    line-height: 1.6;
 }
 
 p {
     font-family: Avenir;
     font-size: 25px;
-    line-height: 1.6em;
 }
 
 a {
@@ -71,12 +91,12 @@ a:active {
 
 #p1 {
     padding: 27vh 0;
+    color: #ecf0f1;
 }
 
 .page h1 {
     font-family: Joe;
     font-size: 50px;
-    color: #ecf0f1;
 }
 
 .back {
@@ -84,14 +104,24 @@ a:active {
     height: 100vh;
 }
 
-#pb1 {
+#pb1,
+#pb2 {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(imgs/japan-mtns.jpg);
     background-size: cover;
+}
+
+#pb1 {
+    background-image: url(imgs/japan-mtns.jpg);
+    /* src http://wallpaper.pickywallpapers.com/1920x1080/japanese-mountains.jpg */
+}
+
+#pb2 {
+    background-image: url(imgs/aerial.jpg);
+    /* src https://iso.500px.com/wp-content/uploads/2014/04/2048-61.jpg */
 }
 
 .cover {
@@ -121,7 +151,7 @@ a:active {
 }
 
 .nav-p {
-    padding: 20px 40px;
+    padding: 17.5px 40px;
 }
 
 #unselected {
@@ -180,23 +210,20 @@ a:active {
     border-left: 2px solid #3498db;
 }
 
-#about-page {
-    position: absolute;
-    top: 100vh;
-    background-color: #ecf0f1;
-    height: 100vh;
-}
-
-.arrow {
-    font-size: 35px;
+.arrow,
+.dir-arrow {
     margin: 0;
-    animation: blink 1.2s ease-in infinite forwards;
     cursor: pointer;
     color: #ecf0f1;
     line-height: 1em;
     position: absolute;
+}
+
+.arrow {
+    font-size: 35px;
     bottom: 0;
     width: 100%;
+    animation: blink 1.2s ease-in infinite forwards;
 }
 
 #arrow1 {
@@ -206,6 +233,80 @@ a:active {
 
 #arrow2 {
     margin-bottom: 35px;
+}
+
+#about-page {
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 12vh 10vw 15vh 10vw;
+}
+
+#about-page p {
+    margin-top: 7vh;
+    font-family: Source Sans Pro;
+}
+
+#about-page img {
+    margin-top: 10vh;
+    max-width: 500px;
+}
+
+#web-page {
+    height: 100vh;
+    position: absolute;
+    top: 200vh;
+    color: #ecf0f1;
+    padding-top: 13vh;
+}
+
+#carousel {
+    margin-top: 10vh;
+    margin-left: calc(50vw - 350px);
+    height: 524px;
+    width: 700px;
+    background-size: cover;
+    transition-duration: .5s;
+}
+
+#web-page a {
+    font-size: 40px;
+    font-family: John;
+    transition: text-shadow .3s ease-in-out;
+    -moz-transition: text-shadow .3s ease-in-out;
+    -webkit-transition: text-shadow .3s ease-in-out;
+    -ms-transition: text-shadow .3s ease-in-out;
+    color: #ecf0f1;
+}
+
+.active {
+    text-shadow: 5px -5px 0 #3498db;
+}
+
+#car-p {
+    margin-top: -5px;
+    font-size: 20px;
+    transition-duration: .5s;
+}
+
+.dir-arrow {
+    top: calc(50vh + 20px);
+    transition-duration: .3s;
+    font-size: 40px;
+}
+
+.dir-arrow:hover {
+    color: rgba(236, 240, 241, 0.7)
+}
+
+#arrow-right {
+    right: 10vw;
+}
+
+#arrow-left {
+    left: 10vw;
 }
 
 @media screen and (max-height: 800px) {
@@ -223,5 +324,15 @@ a:active {
     }
     #arrow2 {
         margin-bottom: 25px;
+    }
+    #about-page {
+        padding-top: 10vh;
+    }
+    #about-page p {
+        font-size: 20px;
+    }
+    #about-page img {
+        max-width: 350px;
+        margin-top: 5vh;
     }
 }
