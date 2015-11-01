@@ -6,6 +6,7 @@ function Site(name, url, desc, img) {
 }
 
 var ind = 0;
+var started = false;
 var pages = ['about', 'web', 'design', 'contact'];
 var sites = [
         new Site("Forecastr", "http://argentumsunrise.github.io/forecastr/#/", "A simple weather app powered by simpleweather.js.", 'url(imgs/forecastr.png)'),
@@ -14,8 +15,6 @@ var sites = [
     ];
 
 $(document).ready(function () {
-
-    carousel();
 
     $('.nav-p').click(function (event) {
         var id = $(this).parent().attr('id');
@@ -31,11 +30,6 @@ $(document).ready(function () {
         var height = window.innerHeight;
         $('#pb1').css('margin-top', (offset / 2) + 'px');
         $('#pb2').css('margin-top', ((offset / 2) - height) + 'px');
-    });
-
-    $('.arrow').click(function (event) {
-        event.preventDefault();
-        scrolling($('#about-page'))
     });
 
     $('.nav-item').mouseenter(function () {
@@ -55,21 +49,39 @@ $(document).ready(function () {
         );
     });
 
-    $('#web-page a').mouseenter(function () {
-        $(this).toggleClass("active");
-    });
+    $('#carousel-ctr a').mouseenter(function () {
+        shadowToggle(false, $(this))
+    })
 
-    $('#web-page a').mouseleave(function () {
-        $(this).toggleClass("active");
-    });
+    $('#carousel-ctr a').mouseleave(function () {
+        shadowToggle(false, $(this))
+    })
+
+    $('#car-start').mouseenter(function () {
+        shadowToggle(true, $(this))
+    })
+
+    $('#car-start').mouseleave(function () {
+        shadowToggle(true, $(this))
+    })
+
+    $('#car-start').click(function () {
+        $(this).fadeOut(300);
+        carousel();
+        started = true;
+    })
 
     $('#arrow-left').click(function () {
-        ind--;
-        carousel();
+        if (started) {
+            ind--;
+            carousel();
+        }
     })
     $('#arrow-right').click(function () {
-        ind++;
-        carousel();
+        if (started) {
+            ind++;
+            carousel();
+        }
     })
 })
 
@@ -92,4 +104,9 @@ function carousel() {
         $('#car-p').html(obj.desc);
         $('#carousel-ctr').fadeIn(300);
     }, 500);
+}
+
+function shadowToggle(isButton, subject) {
+    var x = (isButton ? "button" : "txt");
+    subject.toggleClass(x + "-active");
 }
