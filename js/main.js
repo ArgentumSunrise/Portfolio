@@ -67,6 +67,7 @@ $(document).ready(function () {
 
     $('#car-start').click(function () {
         $(this).fadeOut(300);
+        $('.dir-arrow').fadeIn(300);
         carousel();
         started = true;
     })
@@ -86,11 +87,10 @@ $(document).ready(function () {
 })
 
 function scrolling(target, index) {
-    var time = 700 + index * 700;
+    var time = 700 * Math.sqrt(index + 1)
     $('html, body').animate({
         scrollTop: target.offset().top,
     }, time).css("overflow-y", "scroll");
-    console.log(time)
 }
 
 function carousel() {
