@@ -363,7 +363,7 @@ button:focus {
 #contact-page {
     position: absolute;
     top: 400vh;
-    height: 70vh;
+    height: 40vh;
     background: url(imgs/flowing-background.png);
     background-size: cover;
     color: #ecf0f1;
