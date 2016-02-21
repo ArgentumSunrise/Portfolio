@@ -25,13 +25,6 @@ $(document).ready(function () {
         }
     });
 
-    $(window).scroll(function () {
-        var offset = window.pageYOffset;
-        var height = window.innerHeight;
-        $('#pb1').css('margin-top', (offset / 2) + 'px');
-        $('#pb2').css('margin-top', ((offset / 2) - height) + 'px');
-    });
-
     $('.nav-item').mouseenter(function () {
         $(this).children('.nav-unselected-ctr').css(
             "transform", "rotateX(90deg)"
@@ -68,6 +61,7 @@ $(document).ready(function () {
     $('#car-start').click(function () {
         $(this).fadeOut(300);
         $('.dir-arrow').fadeIn(300);
+        $('#web-page').css('margin-bottom', '15vh');
         carousel();
         started = true;
     })
