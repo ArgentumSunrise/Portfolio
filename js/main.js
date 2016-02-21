@@ -82,7 +82,7 @@ $(document).ready(function () {
 
 function scrolling(target, index) {
     var time = 700 * Math.sqrt(index + 1)
-    $('html, body').animate({
+    $('#container').animate({
         scrollTop: target.offset().top,
     }, time).css("overflow-y", "scroll");
 }
