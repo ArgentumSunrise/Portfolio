@@ -4,136 +4,65 @@
 <head>
     <meta charset='utf-8'>
     <meta name='author' content="Colter Giem">
-    <meta name='description' content='ArgentumSunrise, frontend designer and developer'>
+    <meta name='description' content='Colter Giem, frontend designer and developer'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name='robots' content='all'>
     <link rel='stylesheet' href='styles.css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="/imgs/favicon.ico" />
     <title>Colter Giem</title>
-    <!-- Google Analytics -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-65581457-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
+    <script type='text/javascript' src='js/angular.min.js'></script>
+    <script type='text/javascript' src="js/app.js"></script>
 </head>
 
-<body>
-    <div id='sm-container'>
-        <h1>Argentum Designs</h1>
-        <p>Hi! My name is Colter Giem, and I'm a flat designer and web developer from Denver, Colorado. I love making beautiful, functional websites with a balance between aesthetic and simplicity, and I hope to satisfy any client needs. I work primarily with Javascript, including JQuery and AngularJS, as well as graphics made in Inkscape. If you want to check out my <a target="_blank" href='https://github.com/ArgentumSunrise'>Github</a> or <a target="_blank" href='https://dribbble.com/ArgentumSunrise'>Dribbble</a>, go right ahead.</p>
-        <img src='./imgs/diamond.png'>
-        <p>(PS: Check this out on a desktop/laptop for the full experience!)</p>
+<body ng-app="portfolioApp">
+    <div id='nav'>
+        <div id='small-menu'>
+            <a href='/illustrations'>Illustration</a>
+            <a href='/web'>Web Design</a>
+            <div id='icons'>
+                <a><i class="fa fa-envelope-o fa-lg"></i></a>
+                <a><i class="fa fa-github fa-lg"></i></a>
+                <a><i class="fa fa-twitter fa-lg"></i></a>
+            </div>
+        </div>
+        <div id='nav-left'>
+            <object type="image/svg+xml" data="imgs/animated-logo.svg"></object>
+        </div>
+        <div id='nav-right'>
+            <a href='/illustrations'>Illustration</a>
+            <a href='/web'>Web Design</a>
+            <a><i class="fa fa-envelope-o fa-lg"></i></a>
+            <a><i class="fa fa-github fa-lg"></i></a>
+            <a><i class="fa fa-twitter fa-lg"></i></a>
+        </div>
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-    <div id='bg-container'>
-        <div class='page' id='home-page'>
-            <div class='back' id='pb1'>
-                <div class='cover'></div>
-            </div>
-            <h1>Argentum Designs</h1>
-            <div id='nav'>
-                <div class='nav-item'>
-                    <div class='nav-unselected-ctr' id='about'>
-                        <div class='nav-p' id='unselected'>
-                            <a>ABOUT ME</a>
-                        </div>
-                    </div>
-                    <div class='nav-selected-ctr' id='about'>
-                        <div class='nav-p' id='selected'>
-                            <a>ABOUT ME</a>
-                        </div>
-                    </div>
-                </div>
-                <div class='nav-item'>
-                    <div class='nav-unselected-ctr' id='web'>
-                        <div class='nav-p' id='unselected'>
-                            <a>WEB STUFF</a>
-                        </div>
-                    </div>
-                    <div class='nav-selected-ctr' id='web'>
-                        <div class='nav-p' id='selected'>
-                            <a>WEB STUFF</a>
-                        </div>
-                    </div>
-                </div>
-                <div class='nav-item'>
-                    <div class='nav-unselected-ctr' id='design'>
-                        <div class='nav-p' id='unselected'>
-                            <a>DESIGN STUFF</a>
-                        </div>
-                    </div>
-                    <div class='nav-selected-ctr' id='design'>
-                        <div class='nav-p' id='selected'>
-                            <a>DESIGN STUFF</a>
-                        </div>
-                    </div>
-                </div>
-                <div class='nav-item'>
-                    <div class='nav-unselected-ctr' id='contact'>
-                        <div class='nav-p' id='unselected'>
-                            <a>CONTACT ME</a>
-                        </div>
-                    </div>
-                    <div class='nav-selected-ctr' id='contact'>
-                        <div class='nav-p' id='selected'>
-                            <a>CONTACT ME</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="arrow" id='arrow1'><i class="fa fa-chevron-down"></i>
-            </p>
-            <p class="arrow" id='arrow2'><i class="fa fa-chevron-down"></i>
-            </p>
-        </div>
-        <div class='page' id='about-page'>
-            <h1>About Me</h1>
-            <p>Hi! My name is Colter Giem, and I'm a flat designer and web developer from Denver, Colorado. I love making beautiful, functional websites with a balance between aesthetic and simplicity, and I hope to satisfy any client needs. I work primarily with Javascript, including JQuery and AngularJS, as well as graphics made in Inkscape. If you want to check out my <a target="_blank" href='https://github.com/ArgentumSunrise'>Github</a> or <a target="_blank" href='https://dribbble.com/ArgentumSunrise'>Dribbble</a>, go right ahead.</p>
-            <img src='imgs/mtns.png'>
-        </div>
-        <div class='page' id='web-page'>
-            <div class='back' id='pb2'>
-                <div class='cover'></div>
-            </div>
-            <h1>WEB STUFF</h1>
-            <div id='carousel-ctr'>
-                <p class="dir-arrow" id='arrow-left'><i class="fa fa-chevron-left"></i>
-                </p>
-                <p class="dir-arrow" id='arrow-right'><i class="fa fa-chevron-right"></i>
-                </p>
-                <button id='car-start'>See some of my work</button>
-                <div id='carousel'>
-                </div>
-                <br>
-                <a target="_blank" href=""></a>
-                <p id='car-p'></p>
-                </p>
-            </div>
-        </div>
-        <div class='page' id='design-page'>
-            <h1>DESIGN STUFF</h1>
-            <p>I enjoy making flat design pieces and vector images. They make excellent website backgrounds, are good for logos and can give a site a polished, professional look. If you like what you see here, you can find some of my other stuff on <a target="_blank" href='https://dribbble.com/ArgentumSunrise'>Dribbble</a>, or just contact me <a href='mailto:me@argentum.design'>here</a> and I'll get back to you soon!</p>
-        </div>
-        <div class='page' id='contact-page'>
-            <h1>Contact Me</h1>
-            <p>You can email me at coltergiem@gmail.com, or go to my Github or Dribbble for more of my stuff. I'm always eager to get in touch with potential clients, and I will work hard to make your site look stunning. Just message me and I will be happy to take you on.</p>
-        </div>
+    <div id='outer'>
+        <object id='mtns-back' type="image/svg+xml" data="imgs/back.svg"></object>
+        <object id='logo' type="image/svg+xml" data="imgs/logo.svg"></object>
     </div>
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type='text/javascript' src="js/main.js"></script>
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $('#hamburger').show();
+            $('#nav-right').hide();
+        }
+        $(document).ready(function () {
+            $('#hamburger').click(function () {
+                $(this).toggleClass('open');
+                $('#small-menu').slideToggle(300);
+            });
+        });
+    </script>
+    <script type='text/javascript' src='js/animations.js'></script>
 </body>
 
 </html>

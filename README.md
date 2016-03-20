@@ -1,2 +1,2 @@
 # portfolio
-The portfolio of ArgentumSunrise, frontend designer extraordinaire. Come check out my work!
+Colter Giem, frontend designer and illustrator.
