@@ -1,14 +1,14 @@
-var numClouds = 0;
-var isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
-var limClouds = isMobile ? 4 : 8;
-var cloudSpeed = isMobile ? 150 : 250;
-var bottomLim = isMobile ? 250 : 350;
-console.log(limClouds);
-var cloudTop = $('#outer').position().top;
-var cloudHeight = $('#outer').height();
+function cloudRush() {
 
-$(document).ready(function () {
-    setInterval(function () {
+    var numClouds = 0;
+    var isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+    var limClouds = isMobile ? 4 : 8;
+    var cloudSpeed = isMobile ? 150 : 250;
+    var bottomLim = isMobile ? 250 : 350;
+    var cloudTop = $('#front').position().top;
+    var cloudHeight = $('#front').height();
+
+    var clouds = setInterval(function () {
         spawnCloud();
         $(".cloud").animate({
             left: "+=" + cloudSpeed + "px"
@@ -18,11 +18,15 @@ $(document).ready(function () {
                 $('#cloud' + x).remove();
             }
         }
+        if (!atHome) {
+            return false;
+            clearInterval(clouds);
+        }
     }, 3000);
-});
 
-function spawnCloud() {
-    var top = cloudTop + 90 + Math.floor(Math.random() * (cloudHeight - bottomLim));
-    $('#outer').append("<img class='cloud' id='cloud" + numClouds + "' src='imgs/clouds/cloud" + (Math.floor(Math.random() * 8)).toString() + ".svg' style='top:" + top + "px'></object>");
-    numClouds++;
+    function spawnCloud() {
+        var top = cloudTop + 90 + Math.floor(Math.random() * (cloudHeight - bottomLim));
+        $('#front').append("<img class='cloud' id='cloud" + numClouds + "' src='imgs/clouds/cloud" + (Math.floor(Math.random() * 8)).toString() + ".svg' style='top:" + top + "px'></object>");
+        numClouds++;
+    }
 }

@@ -1,11 +1,21 @@
-var app = angular.module('portfolioApp', []);
+var atHome = true;
 
+$(document).ready(function () {
+    var page = location.search.substring(1, 2000);
+    if (page) {
+        $('#content').load('/pages/' + page + '.html');
+    } else {
+        $('#content').load('/pages/home.html', function () {
+            cloudRush();
+        });
+    }
 
-app.controller('portfolioCtrl', ['$scope', function ($scope) {
-    $scope.orderly = "Arduous";
-}]);
-
-function shadowToggle(isButton, subject) {
-    var x = (isButton ? "button" : "txt");
-    subject.toggleClass(x + "-active");
-}
+    $('#nav').find('.navitem').click(function () {
+        id = this.id;
+        console.log(this.id);
+        $('#content').load('/pages/' + id + '.html', function () {
+            atHome ? cloudRush() : false;
+        }).hide().fadeIn();
+        window.history.pushState("string", "Title", "/?" + id);
+    });
+});

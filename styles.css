@@ -62,6 +62,23 @@ input:focus {
     outline: none;
 }
 
+#outer {
+    height: 100%;
+    position: relative;
+}
+
+#nav {
+    width: 100%;
+    position: absolute;
+    table-layout: fixed;
+    padding-top: 20px;
+    width: 100%;
+    font-family: Avenir;
+    letter-spacing: 3px;
+    font-size: 15px;
+    z-index: 5;
+}
+
 #small-menu {
     line-height: 2.5;
     font-size: 20px;
@@ -69,7 +86,7 @@ input:focus {
     width: 100%;
     padding: 25px 0;
     border-bottom: 1px solid #222;
-    background-color: #b7d8f0;
+    background-color: #fff;
     top: 90px;
     display: none;
 }
@@ -79,22 +96,12 @@ input:focus {
     display: block;
 }
 
-#nav {
-    position: absolute;
-    table-layout: fixed;
-    padding-top: 20px;
-    width: 100%;
-    font-family: Avenir;
-    letter-spacing: 3px;
-    font-size: 15px;
-}
-
 #nav-left {
     float: left;
     padding-left: 30px;
 }
 
-#nav-left object {
+#nav-left img {
     max-height: 50px;
 }
 
@@ -220,22 +227,32 @@ input:focus {
 }
 /* End of nav */
 
-#outer {
+#content {
     height: 100%;
-    background-size: cover;
+}
+
+.section {
+    height: 100%;
+}
+
+#front {
+    background-color: #b7d8f0;
+    position: relative;
+    display: flex;
 }
 
 #mtns-back {
-    max-height: 100%;
-    z-index: -1;
+    max-width: 100%;
+    z-index: 1;
     left: 0;
+    bottom: 0;
     position: absolute;
 }
 
 #logo {
     z-index: 2;
     max-height: 140px;
-    margin-top: 32%;
+    margin: auto;
 }
 
 .cloud {
@@ -248,13 +265,14 @@ input:focus {
 
 @media screen and (max-width: 800px) {
     #logo {
-        margin-top: 50%;
         max-width: 110px;
     }
     #mtns-back {
         display: none;
     }
-    #outer {
+    #front {
+        background-color: none;
         background-image: url(imgs/back-mobile.svg);
+        background-size: cover;
     }
 }
