@@ -1,6 +1,7 @@
+var numClouds = 0;
+
 function cloudRush() {
 
-    var numClouds = 0;
     var isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
     var limClouds = isMobile ? 4 : 8;
     var cloudSpeed = isMobile ? 150 : 250;
@@ -17,10 +18,6 @@ function cloudRush() {
             for (var x = 0; x < numClouds - limClouds; x++) {
                 $('#cloud' + x).remove();
             }
-        }
-        if (!atHome) {
-            return false;
-            clearInterval(clouds);
         }
     }, 3000);
 

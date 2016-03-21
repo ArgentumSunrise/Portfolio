@@ -13,9 +13,7 @@ $(document).ready(function () {
     $('#nav').find('.navitem').click(function () {
         id = this.id;
         console.log(this.id);
-        $('#content').load('/pages/' + id + '.html', function () {
-            atHome ? cloudRush() : false;
-        }).hide().fadeIn();
+        $('#content').load('/pages/' + id + '.html').hide().fadeIn();
         window.history.pushState("string", "Title", "/?" + id);
     });
 });

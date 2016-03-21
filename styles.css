@@ -20,6 +20,11 @@
     src: url(fonts/Lato-Light.ttf);
 }
 
+@font-face {
+    font-family: Lato Hairline;
+    src: url(fonts/Lato-Hairline.ttf);
+}
+
 html,
 body {
     width: 100%;
@@ -49,6 +54,14 @@ a {
     color: #222;
 }
 
+p > a {
+    color: #2b7dde;
+}
+
+p > a:hover {
+    color: #3498db;
+}
+
 a:hover {
     color: #2b7dde;
 }
@@ -67,16 +80,20 @@ input:focus {
     position: relative;
 }
 
-#nav {
+#nav,
+.section {
     width: 100%;
-    position: absolute;
     table-layout: fixed;
     padding-top: 20px;
-    width: 100%;
     font-family: Avenir;
+}
+
+#nav {
+    position: absolute;
     letter-spacing: 3px;
     font-size: 15px;
     z-index: 5;
+    text-align: center;
 }
 
 #small-menu {
@@ -86,7 +103,7 @@ input:focus {
     width: 100%;
     padding: 25px 0;
     border-bottom: 1px solid #222;
-    background-color: #fff;
+    background-color: #b7d8f0;
     top: 90px;
     display: none;
 }
@@ -101,8 +118,10 @@ input:focus {
     padding-left: 30px;
 }
 
-#nav-left img {
+#nav-left svg {
+    max-width: 60px;
     max-height: 50px;
+    margin-left: -10px;
 }
 
 #nav-right {
@@ -233,6 +252,7 @@ input:focus {
 
 .section {
     height: 100%;
+    display: flex;
 }
 
 #front {
@@ -250,9 +270,13 @@ input:focus {
 }
 
 #logo {
-    z-index: 2;
     max-height: 140px;
     margin: auto;
+}
+
+#logo,
+#profile {
+    z-index: 2;
 }
 
 .cloud {
@@ -263,9 +287,77 @@ input:focus {
     position: absolute;
 }
 
+#info {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#info-content {
+    margin: auto;
+}
+
+#profile {
+    max-height: 270px;
+}
+
+#info h1 {
+    line-height: 1;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-family: Lato Hairline;
+    margin-bottom: 60px;
+}
+
+#info p {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 30px;
+}
+
+#footer {
+    width: 100%;
+    height: 300px;
+}
+
+#footer > a > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+#footer > a > div > p {
+    margin: auto;
+    font-family: Lato Hairline;
+    font-size: 35px;
+    color: #ecf0f1;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+#footer a > div {
+    background-size: cover;
+}
+
+#footer #web {
+    float: right;
+    background-image: url(imgs/ill-back.png);
+}
+
+#footer #ill {
+    float: left;
+    background-image: url(imgs/web-back.png);
+    background-color: #1f3a93;
+}
+
 @media screen and (max-width: 800px) {
     #logo {
         max-width: 110px;
+    }
+    #profile {
+        max-height: 170px;
+        margin-bottom: -10px;
     }
     #mtns-back {
         display: none;
@@ -274,5 +366,20 @@ input:focus {
         background-color: none;
         background-image: url(imgs/back-mobile.svg);
         background-size: cover;
+    }
+    #info h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #info p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    #footer {
+        height: 300px;
+    }
+    #footer > a > div {
+        width: 100%;
+        height: 50%;
     }
 }
