@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Nobile);
 @import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @font-face {
     font-family: Joe;
     src: url(fonts/Slim-Joe.otf);
@@ -23,6 +24,46 @@
 @font-face {
     font-family: Lato Hairline;
     src: url(fonts/Lato-Hairline.ttf);
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    transition-duration: .3s;
 }
 
 html,
@@ -51,23 +92,19 @@ a {
     text-decoration: none;
     cursor: pointer;
     transition: color .3s ease-in-out;
-    color: #222;
+    color: #fff;
 }
 
 p > a {
-    color: #2b7dde;
+    color: #26c281;
 }
 
 p > a:hover {
-    color: #3498db;
-}
-
-a:hover {
-    color: #2b7dde;
+    color: #049372;
 }
 
 a:active {
-    color: #3498db;
+    color: #049372;
 }
 
 button:focus,
@@ -81,7 +118,8 @@ input:focus {
 }
 
 #nav,
-.section {
+.section,
+#small-menu {
     width: 100%;
     table-layout: fixed;
     padding-top: 20px;
@@ -90,27 +128,35 @@ input:focus {
 
 #nav {
     position: absolute;
-    letter-spacing: 3px;
-    font-size: 15px;
     z-index: 5;
     text-align: center;
+}
+
+#nav,
+#small-menu {
+    letter-spacing: 3px;
+    font-size: 15px;
 }
 
 #small-menu {
     line-height: 2.5;
     font-size: 20px;
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 25px 0;
     border-bottom: 1px solid #222;
-    background-color: #b7d8f0;
-    top: 90px;
+    background-color: #2c3e50;
     display: none;
 }
 
 #small-menu > a,
 #small-menu > div {
     display: block;
+}
+
+#small-menu > a,
+#icons > a > i {
+    color: #fff;
 }
 
 #nav-left {
@@ -121,19 +167,21 @@ input:focus {
 #nav-left svg {
     max-width: 60px;
     max-height: 50px;
-    margin-left: -10px;
+    margin-left: 10px;
 }
 
 #nav-right {
     padding: 10px;
     cursor: pointer;
-    color: #222;
+    color: #fff;
     display: inline;
     float: right;
     padding-right: 50px;
+    font-size: 17px;
 }
 
 #nav-right a {
+    display: inline;
     padding-left: 20px;
 }
 /* Hamburger icon styling */
@@ -162,7 +210,7 @@ input:focus {
     position: absolute;
     height: 5px;
     width: 50%;
-    background: #222;
+    background: #fff;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -255,36 +303,93 @@ input:focus {
     display: flex;
 }
 
+#sidebar {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 40%;
+    top: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+    z-index: 1;
+    padding-right: 10px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: auto 0;
+    margin-left: 145px;
+}
+
+#sidebar .node-ctr {
+    margin: auto;
+    width: 100%;
+}
+
+#sidebar .node {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    cursor: pointer;
+    transform: rotateZ(45deg);
+    position: absolute;
+    right: 50px;
+}
+
+#sidebar a {
+    font-family: Lato Hairline;
+    font-size: 15px;
+    float: right;
+    margin-right: 90px;
+    opacity: 0;
+}
+
+#sidebar .node:hover {
+    background-color: #fff;
+    transform: rotateZ(0deg);
+}
+
 #front {
-    background-color: #b7d8f0;
+    background: linear-gradient(#26c281, #15a085);
+    background: -webkit-linear-gradient(#26c281, #15a085);
+    background: -moz-linear-gradient(#26c281, #15a085);
+    background: -o-linear-gradient(#26c281, #15a085);
     position: relative;
     display: flex;
 }
 
-#mtns-back {
-    max-width: 100%;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-}
-
-#logo {
-    max-height: 140px;
+#lines {
     margin: auto;
+    color: #fff;
+    font-family: Lato Hairline;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
-#logo,
+#lines h1 {
+    opacity: 0;
+}
+
+#devices {
+    margin-left: -100px;
+}
+
+#lines #logomac {
+    position: absolute;
+    max-height: 200px;
+    left: 0;
+    width: 100vw;
+    margin-top: 85px;
+    margin-left: 10px;
+    cursor: default;
+}
+
 #profile {
     z-index: 2;
-}
-
-.cloud {
-    z-index: 1;
-    left: -110px;
-    max-width: 100px;
-    height: auto;
-    position: absolute;
 }
 
 #info {
@@ -314,47 +419,118 @@ input:focus {
     padding: 0 30px;
 }
 
-#footer {
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+#illustrations-disp {
+    padding: 110px 0;
     width: 100%;
-    height: 300px;
 }
 
-#footer > a > div {
-    width: 50%;
-    height: 100%;
+#illustrations-ctr {
+    padding: 0 50px;
     display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
 }
 
-#footer > a > div > p {
+.illustration {
+    display: table-cell;
+    max-width: 25%;
+    width: auto;
+    height: auto;
+    margin-bottom: -8px;
+}
+
+.illustration img {
+    width: 100%;
+    max-height: 300px;
+    cursor: pointer;
+}
+
+#illustration-large {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+}
+
+#illustration-large > div {
+    width: 80%;
+    height: 75%;
     margin: auto;
+}
+
+#il-footer {
+    padding: 0 10%;
+    display: flex;
+    line-height: 1;
+}
+
+#il-footer div {
+    width: 50%;
+}
+
+#il-footer #left {
+    text-align: left;
+}
+
+#il-footer #right {
+    text-align: right;
+    padding-top: 5px;
+}
+
+#il-footer h2 {
+    display: inline;
     font-family: Lato Hairline;
-    font-size: 35px;
-    color: #ecf0f1;
+    cursor: pointer;
 }
 
-#footer a:hover {
-    color: #fff;
+#il-footer h1 {
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: Lato Light;
 }
 
-#footer a > div {
-    background-size: cover;
+#il-footer h5 {
+    margin-top: -5px;
+    color: #777;
 }
 
-#footer #web {
-    float: right;
-    background-image: url(imgs/ill-back.png);
+#illustration-large img {
+    max-width: 80%;
+    height: auto;
 }
 
-#footer #ill {
-    float: left;
-    background-image: url(imgs/web-back.png);
-    background-color: #1f3a93;
-}
-
-@media screen and (max-width: 800px) {
-    #logo {
-        max-width: 110px;
+@media screen and (min-width: 1900px) {
+    .illustration {
+        max-width: 20%;
     }
+}
+
+@media screen and (max-width: 1480px) {
+    .illustration {
+        max-width: 33%;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .illustration {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
     #profile {
         max-height: 170px;
         margin-bottom: -10px;
@@ -364,22 +540,51 @@ input:focus {
     }
     #front {
         background-color: none;
-        background-image: url(imgs/back-mobile.svg);
-        background-size: cover;
+    }
+    #lines {
+        width: 100%;
+    }
+    #lines #devices {
+        max-width: 250px;
+        margin-left: 0;
+    }
+    #lines #logomac {
+        max-width: 75px;
+        margin-left: calc(50% - 17.5px);
+        margin-top: 130px;
     }
     #info h1 {
         font-size: 30px;
         margin-bottom: 20px;
     }
-    #info p {
+    #info p,
+    #lines h1 {
         font-size: 14px;
+    }
+    #lines h1 {
+        display: none;
+    }
+    #info p {
         text-align: justify;
     }
-    #footer {
-        height: 300px;
+    #nav svg {
+        margin-left: -10px;
     }
-    #footer > a > div {
-        width: 100%;
-        height: 50%;
+    #illustrations-ctr {
+        padding: 0 30px;
+    }
+    .illustration {
+        min-width: 100%;
+        display: block;
+        max-height: 400px;
+    }
+    #illustrations-ctr {
+        display: block;
+        justify-content: center;
+        flex-flow: nowrap;
+        align-content: center;
+    }
+    #sidebar {
+        display: none;
     }
 }

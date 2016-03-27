@@ -1,1 +1,67 @@
-<p>Hi guys!</p>
+<div class='section' id='illustrations-disp'>
+    <div id='illustration-large'>
+        <div>
+            <img>
+            <div id='il-footer'>
+                <div id='left'>
+                    <h1></h1>
+                    <h5></h5>
+                </div>
+                <div id='right'>
+                    <h2 id='prev'>PREV </h2>/
+                    <h2 id='next'> NEXT</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='illustrations-ctr'>
+        <div class='illustration'>
+            <img src='../imgs/illustrations/solstice.png' alt='Solstice:Logo Exploration'>
+        </div>
+        <div class='illustration'>
+            <img src='../imgs/illustrations/desserts1.svg' alt='Desserts Series Part 1:Flat Design'>
+        </div>
+        <div class='illustration'>
+            <img src='../imgs/illustrations/desserts2.svg' alt='Desserts Series Part 2:Flat Design'>
+        </div>
+        <div class='illustration'>
+            <img src='../imgs/illustrations/desserts3.svg' alt='Desserts Series Part 3:Flat Design'>
+        </div>
+        <div class='illustration'>
+            <img src='../imgs/illustrations/actinium.svg' alt='Actinium:Logo Exploration'>
+        </div>
+    </div>
+</div>
+<script>
+    //    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $(document).ready(function () {
+            var tot = 0;
+            var curId = 0;
+            $('.illustration').each(function () {
+                $(this).attr('id', 'i' + tot);
+                tot++;
+            })
+            $('.illustration').click(function () {
+                displayLarge($(this));
+            });
+            $('#right #prev').click(function () {
+                curId = (curId == 0 ? tot - 1 : curId - 1);
+                console.log(curId);
+                displayLarge($('#i' + curId));
+            })
+            $('#right #next').click(function () {
+                curId = (curId == tot - 1 ? 0 : curId + 1);
+                displayLarge($('#i' + curId));
+            })
+
+            function displayLarge(el) {
+                curId = parseInt(el.attr('id').substring(1, 2));
+                var text = el.children('img').attr('alt').split(':');
+                var src = el.children('img').attr('src');
+                $('#illustration-large').fadeIn();
+                $('#illustration-large img').attr('src', src);
+                $('#illustration-large #left > h1').text(text[0]).siblings('h5').text(text[1]);
+            }
+        })
+        //
+</script>

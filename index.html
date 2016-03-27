@@ -9,22 +9,23 @@
     <meta name='robots' content='all'>
     <link rel='stylesheet' href='styles.css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="/imgs/favicon.ico" />
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
     <title>Colter Giem</title>
 </head>
 
 <body>
+    <div id='small-menu'>
+        <a class='navitem' id='illustrations'>Illustrations</a>
+        <a class='navitem' id='projects'>Projects</a>
+        <div id='icons'>
+            <a href='mailto:coltergiem@gmail.com'><i class="fa fa-envelope-o fa-lg"></i></a>
+            <a href='https://github.com/ArgentumSunrise' target="_blank"><i class="fa fa-github fa-lg"></i></a>
+            <a href='https://twitter.com/coltergiem' target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+        </div>
+    </div>
     <div id='outer'>
         <div id='nav'>
-            <div id='small-menu'>
-                <a class='navitem' id='illustrations'>Illustration</a>
-                <a class='navitem' id='web'>Web Design</a>
-                <div id='icons'>
-                    <a href='mailto:coltergiem@gmail.com'><i class="fa fa-envelope-o fa-lg"></i></a>
-                    <a href='https://github.com/ArgentumSunrise' target="_blank"><i class="fa fa-github fa-lg"></i></a>
-                    <a href='https://twitter.com/coltergiem' target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-                </div>
-            </div>
             <div id='nav-left'>
                 <!--                <img id='home' class='navitem' src="imgs/animated-logo.svg">-->
                 <svg id="home" class='navitem' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 722.521 709.17903" height="709.179" width="722.521">
@@ -52,15 +53,15 @@
                         
                         svg:hover &gt;
                         .logo-top {
-                            fill: #3498db;
+                            fill: #049372;
                         }
                     </style>
                 </svg>
             </div>
             <div id='nav-right'>
-                <a class='navitem' id='illustrations'>Illustration</a>
-                <a class='navitem' id='web'>Web Design</a>
-                <a href='mailto:coltergiem@gmail.com'><i class="fa fa-envelope-o fa-lg"></i></a>
+                <a class='navitem' id='illustrations'>Illustrations</a>
+                <a class='navitem' id='projects'>Projects</a>
+                <a href='mailto:coltergiem@gmail.com' target="_blank"><i class="fa fa-envelope-o fa-lg"></i></a>
                 <a href='https://github.com/ArgentumSunrise' target="_blank"><i class="fa fa-github fa-lg"></i></a>
                 <a href='https://twitter.com/coltergiem' target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
             </div>
@@ -87,9 +88,15 @@
                 $('#small-menu').slideToggle(300);
             });
         });
+
+        $('#nav-right a').mouseenter(function () {
+            $()
+        })
     </script>
     <script type='text/javascript' src="js/app.js"></script>
     <script type='text/javascript' src="js/animations.js"></script>
+    <script type='text/javascript' src='js/typed.js'></script>
+    <!--    Via Matt Boldt-->
 </body>
 
 </html>
