@@ -298,13 +298,29 @@ input:focus {
     height: 100%;
 }
 
+#rest,
+#container {
+    height: auto;
+    width: 100%;
+}
+
+#container {
+    position: absolute;
+}
+
+#front-sec,
+#rest {
+    clip: rect(auto, auto, auto, auto);
+    position: absolute;
+}
+
 .section {
-    height: 100%;
+    height: 100vh;
     display: flex;
 }
 
-#sidebar {
-    position: absolute;
+.sidebar {
+    position: fixed;
     right: 0;
     width: 200px;
     height: 40%;
@@ -316,21 +332,28 @@ input:focus {
     padding-right: 10px;
 }
 
+.white .dot {
+    background-color: #fff;
+}
+
+.green .dot {
+    background-color: #15a085;
+}
+
 .dot {
     height: 5px;
     width: 5px;
     border-radius: 5px;
-    background-color: #fff;
     margin: auto 0;
     margin-left: 145px;
 }
 
-#sidebar .node-ctr {
+.sidebar .node-ctr {
     margin: auto;
     width: 100%;
 }
 
-#sidebar .node {
+.sidebar .node {
     width: 20px;
     height: 20px;
     border: 3px solid #fff;
@@ -340,7 +363,15 @@ input:focus {
     right: 50px;
 }
 
-#sidebar a {
+.white .node {
+    border: 3px solid #fff;
+}
+
+.green .node {
+    border: 3px solid #15a085;
+}
+
+.sidebar a {
     font-family: Lato Hairline;
     font-size: 15px;
     float: right;
@@ -348,12 +379,23 @@ input:focus {
     opacity: 0;
 }
 
-#sidebar .node:hover {
-    background-color: #fff;
+.green a {
+    color: #15a085;
+}
+
+.sidebar .node:hover {
     transform: rotateZ(0deg);
 }
 
-#front {
+.white .node:hover {
+    background-color: #fff;
+}
+
+.green .node:hover {
+    background-color: #15a085;
+}
+
+#front-sec {
     background: linear-gradient(#26c281, #15a085);
     background: -webkit-linear-gradient(#26c281, #15a085);
     background: -moz-linear-gradient(#26c281, #15a085);
@@ -378,23 +420,65 @@ input:focus {
     margin-left: -100px;
 }
 
-#lines #logomac {
+#lines .logo {
     position: absolute;
+    width: 100vw;
+    cursor: default;
+}
+
+#logomac {
     max-height: 200px;
     left: 0;
-    width: 100vw;
     margin-top: 85px;
     margin-left: 10px;
-    cursor: default;
+}
+
+#logophone {
+    max-height: 100px;
+    left: -330px;
+    margin-top: 260px;
 }
 
 #profile {
     z-index: 2;
 }
 
-#info {
+#info-sec,
+#process-sec {
     display: flex;
     box-sizing: border-box;
+}
+
+#process-sec {
+    padding: 0;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+.step {
+    width: 30%;
+    height: 50%;
+    text-align: center;
+}
+
+.step h1 {
+    font-family: Lato Hairline;
+    color: #15a085;
+    letter-spacing: 4px;
+}
+
+.step p {
+    font-family: Open Sans;
+    font-size: 15px;
+    padding: 0 20%;
+}
+
+.step img {
+    max-width: 80%;
+}
+
+#research img {
+    margin-left: 24%;
 }
 
 #info-content {
@@ -405,18 +489,19 @@ input:focus {
     max-height: 270px;
 }
 
-#info h1 {
+#info-sec h1 {
     line-height: 1;
     letter-spacing: 5px;
     font-size: 40px;
-    font-family: Lato Hairline;
-    margin-bottom: 60px;
+    font-family: Lato Light;
+    margin-bottom: 40px;
 }
 
-#info p {
+#info-sec p {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 30px;
+    font-family: Open Sans;
 }
 
 .typed-cursor {
@@ -522,6 +607,9 @@ input:focus {
     .illustration {
         max-width: 33%;
     }
+    .step p {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 1015px) {
@@ -538,7 +626,7 @@ input:focus {
     #mtns-back {
         display: none;
     }
-    #front {
+    #front-sec {
         background-color: none;
     }
     #lines {
@@ -548,24 +636,28 @@ input:focus {
         max-width: 250px;
         margin-left: 0;
     }
-    #lines #logomac {
+    #logomac {
         max-width: 75px;
         margin-left: calc(50% - 17.5px);
         margin-top: 130px;
     }
-    #info h1 {
+    #logophone {
+        display: none;
+    }
+    #info-sec h1 {
         font-size: 30px;
         margin-bottom: 20px;
     }
-    #info p,
+    #info-sec p,
     #lines h1 {
         font-size: 14px;
     }
     #lines h1 {
         display: none;
     }
-    #info p {
-        text-align: justify;
+    #info-sec p {
+        text-align: left;
+        line-height: 1.4;
     }
     #nav svg {
         margin-left: -10px;
@@ -581,10 +673,13 @@ input:focus {
     #illustrations-ctr {
         display: block;
         justify-content: center;
+        -webkit-justify-content: center;
         flex-flow: nowrap;
+        -webkit-flex-flow: nowrap;
         align-content: center;
+        -webkit-align-content: center;
     }
-    #sidebar {
+    .sidebar {
         display: none;
     }
 }

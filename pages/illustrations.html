@@ -30,11 +30,20 @@
         <div class='illustration'>
             <img src='../imgs/illustrations/actinium.svg' alt='Actinium:Logo Exploration'>
         </div>
+        <div class='illustration'>
+            <img src='../imgs/illustrations/weather-logos.svg' alt='Weather Icons:Icon Exploration'>
+        </div>
+        <div class='illustration'>
+            <img src='../imgs/illustrations/devlines1.svg' alt='JavaScript:Line Art'>
+        </div>
+        <div class='illustration'>
+            <img src='../imgs/illustrations/devlines2.svg' alt='CSS:Line Art'>
+        </div>
     </div>
 </div>
 <script>
-    //    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    $(document).ready(function () {
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $(document).ready(function () {
             var tot = 0;
             var curId = 0;
             $('.illustration').each(function () {
@@ -63,5 +72,5 @@
                 $('#illustration-large #left > h1').text(text[0]).siblings('h5').text(text[1]);
             }
         })
-        //
+    }
 </script>
