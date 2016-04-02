@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg4288" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="365.95" viewBox="0 0 365.8753 365.952" width="365.88" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs id="defs4290">
+  <clipPath id="clipPath7751" clipPathUnits="userSpaceOnUse">
+   <path id="path7753" d="m727.87-38.587h51.34v402.58h-51.34z" fill="#cbced3"/>
+  </clipPath>
+  <clipPath id="clipPath7806" clipPathUnits="userSpaceOnUse">
+   <path id="path7808" d="m314.61-1134.1h51.34v406.27l-51.34-51.276z" fill="#c6c9ce"/>
+  </clipPath>
+  <clipPath id="clipPath7942" clipPathUnits="userSpaceOnUse">
+   <path id="path7944" d="m980-27.489h29v17.5h-29z" fill="#adbbc8"/>
+  </clipPath>
+  <clipPath id="clipPath7962" clipPathUnits="userSpaceOnUse">
+   <path id="path7964" d="m980 205.9 14.563 40.047v-41.746z" fill-rule="evenodd" fill="#ff6a5d"/>
+  </clipPath>
+  <clipPath id="clipPath7971" clipPathUnits="userSpaceOnUse">
+   <rect id="rect7973" ry="8.75" height="26.875" width="28.938" y="-45.3" x="980" fill="#c92e21"/>
+  </clipPath>
+ </defs>
+ <metadata id="metadata4293">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path id="path8137" stroke-linejoin="round" d="m253.52 201.42c-15.442 22.051-43.405 31.543-69.084 23.447-25.677-8.0968-43.139-31.912-43.139-58.837s17.462-50.739 43.141-58.835c25.679-8.0968 53.643 1.3969 69.084 23.448l36.488-24.823c-26.28-37.555-73.87-53.712-117.58-39.93-43.71 13.778-73.43 54.31-73.43 100.14 0 45.828 29.721 86.362 73.428 100.14 43.707 13.781 91.303-2.3762 117.58-39.932z" stroke="#d3382b" stroke-linecap="round" stroke-width="2.7017" fill="none"/>
+ <g id="g8289" transform="matrix(.90058 0 0 .90058 -655.51 36.384)">
+  <path id="rect7685" d="m727.87-36.626h51.34v402.58h-51.34z" fill="#cbced3"/>
+  <path id="rect7687" d="m737.95-38.587h49.148v402.58h-49.148z" clip-path="url(#clipPath7751)" transform="translate(0 1.9604)" fill="#d5d8dd"/>
+  <g fill="#8f9daa">
+   <rect id="rect7705" height="8.677" width="25.101" y="-23.917" x="754.01"/>
+   <rect id="rect7722" height="8.677" width="17.974" y="-3.9159" x="761.14"/>
+   <rect id="rect7724" height="8.677" width="17.974" y="16.084" x="761.14"/>
+   <rect id="rect7726" height="8.677" width="17.974" y="36.084" x="761.14"/>
+   <rect id="rect7730" height="8.677" width="17.974" y="76.084" x="761.14"/>
+   <rect id="rect7732" height="8.677" width="17.974" y="96.085" x="761.14"/>
+   <rect id="rect7734" height="8.677" width="17.974" y="116.08" x="761.14"/>
+   <rect id="rect7738" height="8.677" width="25.101" y="56.084" x="754.01"/>
+   <rect id="rect7740" height="8.677" width="25.101" y="136.08" x="754.01"/>
+   <rect id="rect7742" height="8.677" width="25.101" y="216.09" x="754.01"/>
+   <rect id="rect7744" height="8.677" width="25.101" y="296.09" x="754.01"/>
+   <rect id="rect7755" height="8.677" width="17.974" y="156.08" x="761.14"/>
+   <rect id="rect7757" height="8.677" width="17.974" y="176.09" x="761.14"/>
+   <rect id="rect7759" height="8.677" width="17.974" y="196.09" x="761.14"/>
+   <rect id="rect7761" height="8.677" width="17.974" y="236.09" x="761.14"/>
+   <rect id="rect7763" height="8.677" width="17.974" y="256.09" x="761.14"/>
+   <rect id="rect7765" height="8.677" width="17.974" y="276.09" x="761.14"/>
+  </g>
+  <path id="rect7695" d="m1134.1 314.61v51.34h-406.27l51.276-51.34z" fill="#bec1c6"/>
+  <path id="rect7697" d="m305.41-1134.1h51.34v397.07l-51.34-50.399z" clip-path="url(#clipPath7806)" transform="rotate(90)" fill="#c8cbd0"/>
+  <g fill="#8f9daa">
+   <rect id="rect7769" transform="rotate(-90)" height="8.677" width="25.101" y="790.32" x="-339.65"/>
+   <rect id="rect7771" transform="rotate(-90)" height="8.677" width="17.974" y="810.32" x="-332.52"/>
+   <rect id="rect7773" transform="rotate(-90)" height="8.677" width="17.974" y="830.32" x="-332.52"/>
+   <rect id="rect7775" transform="rotate(-90)" height="8.677" width="17.974" y="850.32" x="-332.52"/>
+   <rect id="rect7777" transform="rotate(-90)" height="8.677" width="17.974" y="890.32" x="-332.52"/>
+   <rect id="rect7779" transform="rotate(-90)" height="8.677" width="17.974" y="910.32" x="-332.52"/>
+   <rect id="rect7781" transform="rotate(-90)" height="8.677" width="17.974" y="930.32" x="-332.52"/>
+   <rect id="rect7783" transform="rotate(-90)" height="8.677" width="25.101" y="870.32" x="-339.65"/>
+   <rect id="rect7785" transform="rotate(-90)" height="8.677" width="25.101" y="950.32" x="-339.65"/>
+   <rect id="rect7787" transform="rotate(-90)" height="8.677" width="25.101" y="1030.3" x="-339.65"/>
+   <rect id="rect7789" transform="rotate(-90)" height="8.677" width="25.101" y="1110.3" x="-339.65"/>
+   <rect id="rect7791" transform="rotate(-90)" height="8.677" width="17.974" y="970.32" x="-332.52"/>
+   <rect id="rect7793" transform="rotate(-90)" height="8.677" width="17.974" y="990.32" x="-332.52"/>
+   <rect id="rect7795" transform="rotate(-90)" height="8.677" width="17.974" y="1010.3" x="-332.52"/>
+   <rect id="rect7797" transform="rotate(-90)" height="8.677" width="17.974" y="1050.3" x="-332.52"/>
+   <rect id="rect7799" transform="rotate(-90)" height="8.677" width="17.974" y="1070.3" x="-332.52"/>
+   <rect id="rect7801" transform="rotate(-90)" height="8.677" width="17.974" y="1090.3" x="-332.52"/>
+  </g>
+  <path id="path7992" d="m778.87 215.33 0.125 2.375 1.125-3.125z" fill-rule="evenodd" fill="#d3382b"/>
+ </g>
+ <g stroke="#d3382b" stroke-linecap="round" fill="none">
+  <g>
+   <path id="path7994" d="m99.036 227.58h188.78" stroke-width="2.7017"/>
+   <path id="path8155" d="m253.59 241.09v-167.25" stroke-width="2.7017"/>
+   <path id="path8157" d="m167.22 130.15h131.08" stroke-width="2.7326"/>
+  </g>
+  <path id="path8159" d="m299.27 130.09-41.066 43.204" stroke-dasharray="8.10524886, 8.10524886" stroke-width="2.7017"/>
+  <path id="path8161" d="m201.81 270.11v-138.84" stroke-dasharray="8.10524886, 8.10524886" stroke-width="2.7017"/>
+  <g stroke-width="2.7017">
+   <path id="path8163" d="m237.29 146.79h16.082"/>
+   <path id="path8165" d="m237.3 130.66v16.082"/>
+   <path id="path8330" d="m166.94 218.09v43.704"/>
+  </g>
+  <path id="path8332" d="m252.45 75.312-49.878 54.697" stroke-dasharray="8.10524886, 8.10524886" stroke-width="2.7017"/>
+  <path id="path8336" stroke-linejoin="round" stroke-width="2.7017" d="m282.34 147.76a26.466 26.466 0 0 1 -7.91 -17.24"/>
+ </g>
+ <g id="g7975" transform="matrix(.77089 .46558 -.46558 .77089 -554.86 -424.28)">
+  <g>
+   <path id="path7948" d="m994.56 204.2-14.563 1.699 14.563 40.047 14.563-40.047-14.563-1.699z" fill-rule="evenodd" fill="#ff7e71"/>
+   <path id="rect7810" d="m980-11.05h29v217h-29z" fill="#e74c3f"/>
+   <path id="path7946" d="m980 205.9 14.563 40.047v-41.746z" fill-rule="evenodd" fill="#ff6a5d"/>
+   <path id="path7813" d="m980-11.05h19.101v217h-19.101z" fill="#dd4235"/>
+   <path id="path7815" d="m980-11.05h9.9081v217h-9.9081z" fill="#d3382b"/>
+   <rect id="rect7928" ry="8.75" height="26.875" width="28.938" y="-45.3" x="980" fill="#c92e21"/>
+   <rect id="rect7930" clip-path="url(#clipPath7971)" ry="8.75" height="26.75" width="24.625" y="-45.3" x="987.91" fill="#d3382b"/>
+   <path id="path7817" d="m980-27.489h29v17.5h-29z" fill="#adbbc8"/>
+   <path id="path7922" d="m980-23.739h29v3.5h-29z" fill="#c1cfdc"/>
+   <path id="path7924" d="m980-17.239h29v3.5h-29z" fill="#c1cfdc"/>
+  </g>
+  <rect id="rect7938" clip-path="url(#clipPath7942)" fill-opacity=".082873" ry="0" height="22.362" width="16.352" y="-29.323" x="976.34"/>
+  <path id="path7958" d="m994.5 223.58-2.6661 2.7544-2.3772-2.775-2.8049 2.9375 7.8482 21.771z" clip-path="url(#clipPath7962)" fill-rule="evenodd" fill="#d3382b"/>
+  <path id="path7966" d="m994.5 223.58-2.6661 2.7544-2.3772-2.775-2.8049 2.9375 7.8482 21.771z" clip-path="url(#clipPath7962)" fill-rule="evenodd" transform="matrix(-1 0 0 1 1989 0)" fill="#dd4235"/>
+ </g>
+</svg>

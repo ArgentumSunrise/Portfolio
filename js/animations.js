@@ -11,12 +11,12 @@ $(document).ready(function () {
     prepPaths(spaths);
     prepPaths(logo);
     setTimeout(function () {
-        draw(fpaths);
+        draw(fpaths, 3);
         setTimeout(function () {
-            draw(spaths)
-        }, 500);
+            draw(spaths, 1.5)
+        }, 1500);
         setTimeout(function () {
-            draw(logo)
+            draw(logo, 3)
         }, 2500);
     }, 500);
 
@@ -32,10 +32,10 @@ $(document).ready(function () {
         }
     }
 
-    function draw(paths) {
+    function draw(paths, n) {
         for (var j = 0; j < paths.length; j++) {
             paths[j].style.transition = paths[j].style.WebkitTransition =
-                'stroke-dashoffset 3s ease-in-out';
+                'stroke-dashoffset ' + n + 's ease-in-out';
             paths[j].style.strokeDashoffset = '0';
         }
     }
