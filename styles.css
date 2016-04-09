@@ -109,7 +109,6 @@ input:focus {
 .section,
 #small-menu {
     width: 100%;
-    table-layout: fixed;
     padding-top: 20px;
     font-family: Avenir;
 }
@@ -243,7 +242,7 @@ input:focus {
     transform: rotate(45deg);
 }
 
-#hamburger.openspan:nth-child(2),
+#hamburger.open span:nth-child(2),
 #hamburger.open span:nth-child(5) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -305,6 +304,7 @@ input:focus {
 .section {
     height: 100vh;
     display: flex;
+    display: -webkit-flex;
 }
 
 .sidebar {
@@ -431,11 +431,13 @@ input:focus {
     z-index: 2;
 }
 
-#info-sec, 
+#info-sec,
 #process-sec {
-    display: flex;
-    display: -webkit-flex;
     box-sizing: border-box;
+}
+
+#process-sec > #title {
+    width: 100%;
 }
 
 #process-sec > h2 {
@@ -446,11 +448,18 @@ input:focus {
 }
 
 #process-sec {
+    width: 100%;
     padding: 0;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
     width: 95%;
     height: auto;
+    display: block;
+}
+
+#process-ctr {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
 }
 
 .step {
@@ -494,6 +503,14 @@ input:focus {
     margin-left: 21.5%;
 }
 
+#polishing h1 {
+    color: #d2527f;
+}
+
+#shipping h1 {
+    color: #f89406;
+}
+
 #info-content {
     margin: auto;
 }
@@ -502,7 +519,8 @@ input:focus {
     max-height: 270px;
 }
 
-#info-sec h1 {
+#info-sec h1,
+#title {
     line-height: 1;
     letter-spacing: 5px;
     font-size: 40px;
@@ -513,7 +531,7 @@ input:focus {
 #info-sec p {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 30px;
+    padding: 0 90px;
     font-family: Open Sans;
 }
 
@@ -610,11 +628,55 @@ input:focus {
     height: auto;
 }
 
+#projects-sec {
+    padding-top: 120px;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+.project {
+    width: 80%;
+    padding: 0 0 60px 10%;
+}
+
+.project img {
+    max-width: 100%;
+    box-shadow: 0 0 8px #888;
+}
+
+.project p,
+.project h1,
+.project a {
+    text-align: left;
+    line-height: 1;
+}
+
+.project p,
+.project a {
+    font-size: 15px;
+}
+
+.project h1 {
+    font-family: Lato Hairline;
+}
+
+.project a {
+    cursor: pointer;
+    color: #222;
+    float: left;
+}
+
+.project a:hover {
+    color: #15a085;
+}
+
 @media screen and (min-width: 1900px) {
     .illustration {
         max-width: 20%;
     }
-    #process-ctr {
+    #process-sec {
         width: 95%;
     }
 }
@@ -677,10 +739,10 @@ input:focus {
     #nav svg {
         margin-left: -10px;
     }
-    #process-ctr {
+    #process-sec {
         width: 100%;
     }
-    #process-ctr img {
+    #process-sec img {
         max-height: 20vh;
     }
     #research img {
@@ -708,5 +770,8 @@ input:focus {
     }
     .sidebar {
         display: none;
+    }
+    .project h1 {
+        font-size: 20px;
     }
 }

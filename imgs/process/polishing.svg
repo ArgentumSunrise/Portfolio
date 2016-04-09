@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg4288" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="391" viewBox="0 0 250.99816 391.00212" width="251" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs id="defs4290">
+  <clipPath id="clipPath8111" clipPathUnits="userSpaceOnUse">
+   <rect id="rect8113" ry="12" height="79.5" width="127.5" y="240.95" x="-366" fill="#c8cbd0"/>
+  </clipPath>
+  <clipPath id="clipPath8127" clipPathUnits="userSpaceOnUse">
+   <path id="path8129" d="m-302.5-71.051a125.5 125.5 0 0 0 -125.5 125.5 125.5 125.5 0 0 0 35.93 87.864c25.305 36.983 31.261 68.786 32.945 114.04l111.07 0.50001c4.0838-45.367 5.5042-84.542 40.498-119.54l-0.62501-0.2168a125.5 125.5 0 0 0 31.186 -82.647 125.5 125.5 0 0 0 -125.5 -125.5z" fill="#ffdc79"/>
+  </clipPath>
+ </defs>
+ <metadata id="metadata4293">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g>
+  <text id="text4136" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="375px" y="-316.00143" x="4258.0249" font-family="sans-serif" line-height="125%" fill="#000000"><tspan id="tspan4138" font-weight="500" y="-316.00143" x="4258.0249" font-family="Cursor"/></text>
+  <rect id="rect4895" height="981.15" width="981.15" y="-362.55" x="3284.9" fill="#fff"/>
+  <text id="text4136-2" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="375px" y="1201.9867" x="1069.5686" font-family="sans-serif" line-height="125%" fill="#000000"><tspan id="tspan4138-0" font-weight="500" y="1201.9867" x="1069.5686" font-family="Cursor"/></text>
+  <path id="path8101" d="m125.5-0.50077a125.5 125.5 0 0 0 -125.5 125.5 125.5 125.5 0 0 0 35.927 87.86c25.305 36.983 31.261 68.786 32.945 114.04l111.07 0.5c4.0838-45.367 5.5042-84.542 40.498-119.54l-0.62501-0.2168a125.5 125.5 0 0 0 31.19 -82.64 125.5 125.5 0 0 0 -125.5 -125.5z" fill="#ffe779"/>
+  <rect id="rect8105" ry="12" height="79.5" width="127.5" y="311.5" x="61.998" fill="#cbced3"/>
+  <path id="path8123" d="m-276-71.051a125.5 125.5 0 0 0 -125.5 125.5 125.5 125.5 0 0 0 35.93 87.864c25.305 36.983 31.261 68.786 32.945 114.04l111.07 0.50001c4.0838-45.367 5.5042-84.542 40.498-119.54l-0.625-0.2168a125.5 125.5 0 0 0 31.18 -82.64 125.5 125.5 0 0 0 -125.5 -125.5z" clip-path="url(#clipPath8127)" transform="translate(428 70.55)" fill="#fff079"/>
+  <rect id="rect8107" transform="translate(428 70.55)" clip-path="url(#clipPath8111)" ry="12" height="79.5" width="127.5" y="240.95" x="-343.5" fill="#d5d8dd"/>
+ </g>
+ <g fill="#bec1c6">
+  <rect id="rect8115" ry="0" height="9" width="127" y="327.5" x="61.998"/>
+  <rect id="rect8117" ry="0" height="9" width="127" y="347.5" x="61.998"/>
+  <rect id="rect8119" ry="0" height="9" width="127" y="366.5" x="61.998"/>
+ </g>
+ <path id="path8131" stroke-linejoin="round" fill="#ffe779" stroke="#fff" stroke-linecap="round" stroke-width="15" d="m175.56 42.557a89.096 89.096 0 0 1 43.194 61.688"/>
+</svg>
