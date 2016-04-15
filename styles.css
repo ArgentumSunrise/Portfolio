@@ -433,6 +433,7 @@ input:focus {
 
 #info-sec,
 #process-sec {
+    width: 95%;
     box-sizing: border-box;
 }
 
@@ -448,11 +449,10 @@ input:focus {
 }
 
 #process-sec {
-    width: 100%;
     padding: 0;
-    width: 95%;
     height: auto;
     display: block;
+    padding-bottom: 50px;
 }
 
 #process-ctr {
@@ -520,6 +520,7 @@ input:focus {
 }
 
 #info-sec h1,
+#hiring-sec h1,
 #title {
     line-height: 1;
     letter-spacing: 5px;
@@ -528,7 +529,8 @@ input:focus {
     margin-bottom: 40px;
 }
 
-#info-sec p {
+#info-sec p,
+#hiring-sec p {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 90px;
@@ -670,6 +672,13 @@ input:focus {
 
 .project a:hover {
     color: #15a085;
+    background-color:
+}
+
+#hiring-sec {
+    padding: 100px 0;
+    background-color: #15a085;
+    color: #fff;
 }
 
 @media screen and (min-width: 1900px) {
@@ -722,19 +731,26 @@ input:focus {
     #logophone {
         display: none;
     }
-    #info-sec h1 {
+    #info-sec h1,
+    #hiring-sec h1 {
         font-size: 30px;
         margin-bottom: 20px;
     }
     #info-sec p,
+    #hiring-sec p,
     #lines h1 {
         font-size: 14px;
     }
+    #info-sec p,
+    #hiring-sec p {
+        padding: 0 20px;
+        text-align: justify;
+    }
+    #hiring-sec {
+        padding: 20px 0;
+    }
     #lines h1 {
         display: none;
-    }
-    #info-sec p {
-        text-align: justify;
     }
     #nav svg {
         margin-left: -10px;
