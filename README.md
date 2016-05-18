@@ -1,2 +1,2 @@
 # portfolio
-Colter Giem, frontend designer and illustrator.
+Colter Giem, frontend designer and illustrator.   
